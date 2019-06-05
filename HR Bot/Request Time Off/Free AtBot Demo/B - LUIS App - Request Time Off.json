@@ -1,0 +1,434 @@
+{
+  "luis_schema_version": "3.2.0",
+  "versionId": "0.1",
+  "name": "Ask HR",
+  "desc": "Help with common HR information and action",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "None"
+    },
+    {
+      "name": "Request Time Off"
+    }
+  ],
+  "entities": [
+    {
+      "name": "PurchaseItem",
+      "roles": []
+    },
+    {
+      "name": "SickTime",
+      "roles": []
+    },
+    {
+      "name": "VacationTime",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [
+    {
+      "name": "datetimeV2",
+      "roles": []
+    },
+    {
+      "name": "money",
+      "roles": []
+    }
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "and how much vacation time can i roll over?",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "VacationTime",
+          "startPos": 13,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "can i take some personal leave",
+      "intent": "Request Time Off",
+      "entities": []
+    },
+    {
+      "text": "hey there",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hi there",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how do i file for sick leave",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how do i get paid back for my work trip",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how do i get reimbursed for my business trip",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how do i submit an expense",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how do i take a sabbatical",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how much vacation time do i get?",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "VacationTime",
+          "startPos": 9,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "i am sick what do i do",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i can't get to work today because i'm ill",
+      "intent": "Request Time Off",
+      "entities": [
+        {
+          "entity": "SickTime",
+          "startPos": 38,
+          "endPos": 40
+        }
+      ]
+    },
+    {
+      "text": "i have to use medical time",
+      "intent": "Request Time Off",
+      "entities": [
+        {
+          "entity": "SickTime",
+          "startPos": 14,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "i need some personal time off",
+      "intent": "Request Time Off",
+      "entities": []
+    },
+    {
+      "text": "i need some time off",
+      "intent": "Request Time Off",
+      "entities": []
+    },
+    {
+      "text": "i need take time off",
+      "intent": "Request Time Off",
+      "entities": []
+    },
+    {
+      "text": "i need to call in sick today",
+      "intent": "Request Time Off",
+      "entities": [
+        {
+          "entity": "SickTime",
+          "startPos": 18,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "i need to schedule some vacation",
+      "intent": "Request Time Off",
+      "entities": [
+        {
+          "entity": "VacationTime",
+          "startPos": 24,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "i need to take some time off",
+      "intent": "Request Time Off",
+      "entities": []
+    },
+    {
+      "text": "i took sick time on april 15",
+      "intent": "Request Time Off",
+      "entities": [
+        {
+          "entity": "SickTime",
+          "startPos": 7,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "i wanna take some vacation tomorrow through thursday",
+      "intent": "Request Time Off",
+      "entities": [
+        {
+          "entity": "VacationTime",
+          "startPos": 18,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "i wanna take tomorrow off",
+      "intent": "Request Time Off",
+      "entities": []
+    },
+    {
+      "text": "i want a few days off",
+      "intent": "Request Time Off",
+      "entities": []
+    },
+    {
+      "text": "i want to take a vacation",
+      "intent": "Request Time Off",
+      "entities": [
+        {
+          "entity": "VacationTime",
+          "startPos": 17,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "i want to take vacation tomorrow through monday.",
+      "intent": "Request Time Off",
+      "entities": [
+        {
+          "entity": "VacationTime",
+          "startPos": 15,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "i was out sick yesterday",
+      "intent": "Request Time Off",
+      "entities": [
+        {
+          "entity": "SickTime",
+          "startPos": 10,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "i was sick and took off last thursday and last friday.",
+      "intent": "Request Time Off",
+      "entities": [
+        {
+          "entity": "SickTime",
+          "startPos": 6,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "i will be on personal leave april 1-3",
+      "intent": "Request Time Off",
+      "entities": []
+    },
+    {
+      "text": "i'll be taking vacation from next monday to next wednesday",
+      "intent": "Request Time Off",
+      "entities": [
+        {
+          "entity": "VacationTime",
+          "startPos": 15,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "i'm calling in sick",
+      "intent": "Request Time Off",
+      "entities": [
+        {
+          "entity": "SickTime",
+          "startPos": 15,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "i'm calling in sick today",
+      "intent": "Request Time Off",
+      "entities": [
+        {
+          "entity": "SickTime",
+          "startPos": 15,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "i'm going on vacation from june 1-5.",
+      "intent": "Request Time Off",
+      "entities": [
+        {
+          "entity": "VacationTime",
+          "startPos": 13,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "i'm going on vacation from monday to friday",
+      "intent": "Request Time Off",
+      "entities": [
+        {
+          "entity": "VacationTime",
+          "startPos": 13,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "i'm ill today and won't be in",
+      "intent": "Request Time Off",
+      "entities": [
+        {
+          "entity": "SickTime",
+          "startPos": 4,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "i'm not feeling well today and won't be in",
+      "intent": "Request Time Off",
+      "entities": []
+    },
+    {
+      "text": "i'm planning on taking some time off",
+      "intent": "Request Time Off",
+      "entities": []
+    },
+    {
+      "text": "i'm planning to take some time off june 5-9",
+      "intent": "Request Time Off",
+      "entities": []
+    },
+    {
+      "text": "i'm sick and need to call in today",
+      "intent": "Request Time Off",
+      "entities": [
+        {
+          "entity": "SickTime",
+          "startPos": 4,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "i'm taking a personal day tomorrow",
+      "intent": "Request Time Off",
+      "entities": []
+    },
+    {
+      "text": "i'm taking sick time tomorrow through monday.",
+      "intent": "Request Time Off",
+      "entities": [
+        {
+          "entity": "SickTime",
+          "startPos": 11,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "i'm taking some personal time next tuesday",
+      "intent": "Request Time Off",
+      "entities": []
+    },
+    {
+      "text": "i'm taking some vacation next thursday.",
+      "intent": "Request Time Off",
+      "entities": [
+        {
+          "entity": "VacationTime",
+          "startPos": 16,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "i'm taking some vacation time june 5-9",
+      "intent": "Request Time Off",
+      "entities": [
+        {
+          "entity": "VacationTime",
+          "startPos": 16,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "i'm taking vacation time from june 3-9.",
+      "intent": "Request Time Off",
+      "entities": [
+        {
+          "entity": "VacationTime",
+          "startPos": 11,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "my child is sick i need to stay home",
+      "intent": "Request Time Off",
+      "entities": [
+        {
+          "entity": "SickTime",
+          "startPos": 12,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "what is this",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what's up",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "who are you",
+      "intent": "None",
+      "entities": []
+    }
+  ],
+  "settings": []
+}
