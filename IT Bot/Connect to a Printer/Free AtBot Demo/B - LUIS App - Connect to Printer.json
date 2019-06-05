@@ -1,0 +1,393 @@
+{
+  "luis_schema_version": "3.2.0",
+  "versionId": "0.1",
+  "name": "Connect to Printer",
+  "desc": "Intents and utterances for the IT service desk bot",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "Connect to printer"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "PrinterType",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "asdfasdf",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "call off that it problem",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "can i close a trouble ticket",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "can i report an issue",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "can i revise a trouble ticket",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "danke",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "end a servicenow ticket",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "gracias",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hey",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how do i choose a different printer?",
+      "intent": "Connect to printer",
+      "entities": []
+    },
+    {
+      "text": "how do i connect to a printer?",
+      "intent": "Connect to printer",
+      "entities": []
+    },
+    {
+      "text": "how do i get my guest on the wifi?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i can't add an account in my email on my ipad",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i can't add an email account to outlook",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i can't get connected to a printer",
+      "intent": "Connect to printer",
+      "entities": []
+    },
+    {
+      "text": "i need a black and white printer",
+      "intent": "Connect to printer",
+      "entities": [
+        {
+          "entity": "PrinterType",
+          "startPos": 9,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "i need a color printer",
+      "intent": "Connect to printer",
+      "entities": [
+        {
+          "entity": "PrinterType",
+          "startPos": 9,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "i need another email in outlook",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need to add another outlook account on my droid",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need to change an existing incident",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need to create a new ticket",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need to end an existing incident",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need to print in black and white",
+      "intent": "Connect to printer",
+      "entities": [
+        {
+          "entity": "PrinterType",
+          "startPos": 19,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "i need to report an issue with my phone.",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need to set up a meeting with mick to talk about the state of things",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need to submit a trouble ticket",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want to add another account to outlook",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want to add another email account on my droid",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want to add another inbox to my outlook on my iphone",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want to close a ticket",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want to generate a new trouble ticket",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want to get connected to a new printer.",
+      "intent": "Connect to printer",
+      "entities": []
+    },
+    {
+      "text": "i want to print in color",
+      "intent": "Connect to printer",
+      "entities": [
+        {
+          "entity": "PrinterType",
+          "startPos": 19,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "i want to update a ticket",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i will be out of the office next week",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i’d like to amend a service now problem ticket",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i’d like to open a ticket",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i’d like to terminate a service now problem ticket",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "incident",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "initiate an it ticket",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "it problem",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "it ticket",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "my printer isn't printing",
+      "intent": "Connect to printer",
+      "entities": []
+    },
+    {
+      "text": "new servicenow incident",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "open a service now ticket",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "outlook won't let me add another account",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "please change a servicenow ticket",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "please delete a servicenow incident",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "please launch a new incident",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "problem",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "report an it problem",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "service now",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "servicenow",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "start an incident",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "status update for a servicenow incident",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "thanks",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "ticket",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "trouble ticket",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what's the difference between sharepoint and onedrive?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "where's the closest b&w printer?",
+      "intent": "Connect to printer",
+      "entities": [
+        {
+          "entity": "PrinterType",
+          "startPos": 20,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "where's the closest printer?",
+      "intent": "Connect to printer",
+      "entities": []
+    },
+    {
+      "text": "why can't i add an email account to outlook",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "why can't i include another inbox in my outlook",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "why is my printer not connecting?",
+      "intent": "Connect to printer",
+      "entities": []
+    }
+  ],
+  "settings": []
+}
