@@ -1,0 +1,416 @@
+{
+  "luis_schema_version": "3.2.0",
+  "versionId": "0.1",
+  "name": "Submit a Receipt",
+  "desc": "Intent for use with the Submit a Receipt demo Flow",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "None"
+    },
+    {
+      "name": "Submit an expense"
+    }
+  ],
+  "entities": [
+    {
+      "name": "ExpenseItem",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [
+    {
+      "name": "datetimeV2",
+      "roles": []
+    },
+    {
+      "name": "money",
+      "roles": []
+    }
+  ],
+  "model_features": [
+    {
+      "name": "Names",
+      "mode": true,
+      "words": "john,james,paul,david,george,william,jane,robert,richard,thomas,michael,andrew,scott,stephen,jim,mary,jones,williams,christopher,charles,brian,keith,peter,davis,kevin,joseph,gary,steve,craig,steven,ashley,erin,kathleen,sheila,julie,sarah,susan,karen,lisa,amy,angela,andrea,melanie,sharon,tina,christine,wendy,rebecca,brenda,cindy,barbara,lynn,denise,becky,nancy,debbie",
+      "activated": true
+    },
+    {
+      "name": "Want",
+      "mode": true,
+      "words": "require,need,requires,order,get,required,want,needs,make,needed,obtain,setup,desire,arrange",
+      "activated": true
+    }
+  ],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "brunch from yesterday was $21.45",
+      "intent": "Submit an expense",
+      "entities": [
+        {
+          "entity": "ExpenseItem",
+          "startPos": 0,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "brunch yesterday was $15",
+      "intent": "Submit an expense",
+      "entities": [
+        {
+          "entity": "ExpenseItem",
+          "startPos": 0,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "dinner from monday cost me $27.55",
+      "intent": "Submit an expense",
+      "entities": [
+        {
+          "entity": "ExpenseItem",
+          "startPos": 0,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "dinner totaled $58.79 yesterday",
+      "intent": "Submit an expense",
+      "entities": [
+        {
+          "entity": "ExpenseItem",
+          "startPos": 0,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "do i have any homework due?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "do i have any quizzes?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "enable my automatic email reply for next week",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "get a non disclosure signed with jane doe at jane@company.com.",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "have karen johnson at microsoft (kjohnson@fakemicrosoft.com) complete an nda.",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how do i choose a different printer?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how do i connect to a printer?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how long until class registration starts for spring?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i bought office supplies today for $59.46",
+      "intent": "Submit an expense",
+      "entities": [
+        {
+          "entity": "ExpenseItem",
+          "startPos": 9,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "i can't get connected to a printer.",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i had to buy office supplies yesterday",
+      "intent": "Submit an expense",
+      "entities": [
+        {
+          "entity": "ExpenseItem",
+          "startPos": 13,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "i have to have a non-disclosure agreement filed",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need a black and white printer",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need a color printer",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need a flight tomorrow",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need an nda signed by gilbert swanson at yammer. email: gwanson@fakeyammer.com.",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need mobile phone insurance",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need to get and nda signed",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need to get reimbursed",
+      "intent": "Submit an expense",
+      "entities": []
+    },
+    {
+      "text": "i need to print in b&w",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need to print in color",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need to reserve a train next week",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need to reserve airfare on monday",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need to submit an expense",
+      "intent": "Submit an expense",
+      "entities": []
+    },
+    {
+      "text": "i spent $12.57 on breakfast this morning.",
+      "intent": "Submit an expense",
+      "entities": [
+        {
+          "entity": "ExpenseItem",
+          "startPos": 18,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "i spent $14.96 on lunch today",
+      "intent": "Submit an expense",
+      "entities": [
+        {
+          "entity": "ExpenseItem",
+          "startPos": 18,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "i want to book a hotel for next week",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want to file a non disclosure agreement",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want to insure my cell phone",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want to print in black and white",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want to travel tomorrow through thursday",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i'll be out of the office next thursday. set up my automatic reply.",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "kayla pratt, who works at skype, needs to sign a nondisclosure agreement. send to kpratt@fakeskype.com.",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "my breakfast from yesterday cost $8.14",
+      "intent": "Submit an expense",
+      "entities": [
+        {
+          "entity": "ExpenseItem",
+          "startPos": 3,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "my breakfast today was $4.59",
+      "intent": "Submit an expense",
+      "entities": [
+        {
+          "entity": "ExpenseItem",
+          "startPos": 3,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "my expenses for today were $20",
+      "intent": "Submit an expense",
+      "entities": []
+    },
+    {
+      "text": "my mobile isn't insured",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "my printer isn't printing.",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "send an nda to john smith at abc consulting. his email is john@abcconsulting.com.",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "set my auto email for vacation",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "set my out of office reply",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "set my outlook auto reply for tomorrow",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "set up my reply email for while i'm not at work tomorrow.",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "turn on my out of office during my vacation",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "turn on my outlook automatic reply for june 3 to 9",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "update my out of office",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what assignments do i have to do?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what's my scheduled homework?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "when do final exams begin?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "when does the library open!?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "when is my exam?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "where's the closest color printer?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "where's the closest printer?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "why is my printer not connecting?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "yesterday's breakfast cost $10.87",
+      "intent": "Submit an expense",
+      "entities": [
+        {
+          "entity": "ExpenseItem",
+          "startPos": 12,
+          "endPos": 20
+        }
+      ]
+    }
+  ],
+  "settings": []
+}
