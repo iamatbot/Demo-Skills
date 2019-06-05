@@ -1,0 +1,4 @@
+Setting up the “Connect to a Printer” Skill for an AtBot Enterprise Demo
+
+A. Set up your bot
+If you haven’t already, be sure to create and configure an AtBot by following steps 1 through 3 in the Enterprise Jump Start Guide. This document is your go-to guide for getting your enterprise AtBots up and running and you should keep it handy whenever you’re building out AtBots.
